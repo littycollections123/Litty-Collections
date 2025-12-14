@@ -1,4 +1,4 @@
-{
+*{
   margin:0;
   padding:0;
   box-sizing:border-box;
@@ -22,7 +22,6 @@ body{
 
 .logo{
   height:55px;
-  width:auto;
 }
 
 .header h1{
@@ -30,6 +29,25 @@ body{
   font-size:48px;
   color:#d4af37;
   letter-spacing:2px;
+}
+
+/* ABOUT */
+.about{
+  text-align:center;
+  padding:40px 20px;
+  max-width:900px;
+  margin:auto;
+}
+
+.about h2{
+  font-size:30px;
+  color:#8b1538;
+  margin-bottom:15px;
+}
+
+.about p{
+  font-size:18px;
+  line-height:1.6;
 }
 
 /* GALLERY */
@@ -46,6 +64,7 @@ body{
   object-fit:cover;
   border-radius:10px;
   box-shadow:0 5px 15px rgba(0,0,0,0.15);
+  cursor:pointer;
   transition:transform 0.3s;
 }
 
@@ -53,16 +72,54 @@ body{
   transform:scale(1.05);
 }
 
+/* FULLSCREEN VIEW */
+#viewer{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background:rgba(0,0,0,0.85);
+  display:none;
+  align-items:center;
+  justify-content:center;
+  z-index:999;
+}
+
+#viewer img{
+  max-width:90%;
+  max-height:90%;
+  border-radius:10px;
+}
+
 /* CONTACT */
 .contact{
   text-align:center;
-  padding:30px 15px;
+  padding:35px 15px;
 }
 
 .contact h2{
   font-size:28px;
   color:#8b1538;
   margin-bottom:10px;
+}
+
+.contact p{
+  font-size:18px;
+}
+
+/* WHATSAPP BUTTON */
+.whatsapp{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  background:#25D366;
+  color:white;
+  padding:14px 18px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 /* FOOTER */
