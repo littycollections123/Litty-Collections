@@ -121,7 +121,7 @@ a{color:inherit}
 
 .btn.alt{background:transparent;border:1px solid var(--maroon);color:var(--maroon)}
 h1{
-  font-size: 60px;
+  font-size: 80px;
   color: #D4AF37; /* Gold */
   font-family: 'Playfair Display', serif;
   letter-spacing: 3px;
@@ -129,7 +129,8 @@ h1{
   margin: 10px 0;
 }
 .site-logo{
-  height: 60px;   /* change this number if needed */
+  height: 40px;   /* change this number if needed */
   width: auto;
   object-fit: contain;
 }
+
