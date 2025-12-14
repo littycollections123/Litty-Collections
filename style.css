@@ -118,4 +118,13 @@ input,textarea{width:100%;padding:10px;border:1px solid rgba(0,0,0,0.08);border-
 
 /* extra polish */
 a{color:inherit}
+
 .btn.alt{background:transparent;border:1px solid var(--maroon);color:var(--maroon)}
+h1{
+  font-size: 60px;
+  color: #D4AF37; /* Gold */
+  font-family: 'Playfair Display', serif;
+  letter-spacing: 3px;
+  text-shadow: 3px 3px 6px #000;
+  margin: 10px 0;
+}
