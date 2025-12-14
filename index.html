@@ -17,27 +17,59 @@
     <h1>Litty Collections</h1>
   </header>
 
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Litty Collections</h2>
+    <p>
+      Litty Collections brings you hand-picked traditional Indian sarees,
+      celebrating culture, elegance, and timeless beauty.
+      Each piece is chosen with care to match modern taste while preserving
+      rich heritage.
+    </p>
+  </section>
+
   <!-- GALLERY -->
   <section class="gallery">
-    <img src="img1.jpg" alt="Saree">
-    <img src="img2.jpg" alt="Saree">
-    <img src="img3.jpg" alt="Saree">
-    <img src="img4.jpg" alt="Saree">
-    <img src="img5.jpg" alt="Saree">
-    <img src="img6.jpg" alt="Saree">
+    <img src="img1.jpg" alt="Saree" onclick="openImg(this.src)">
+    <img src="img2.jpg" alt="Saree" onclick="openImg(this.src)">
+    <img src="img3.jpg" alt="Saree" onclick="openImg(this.src)">
+    <img src="img4.jpg" alt="Saree" onclick="openImg(this.src)">
+    <img src="img5.jpg" alt="Saree" onclick="openImg(this.src)">
+    <img src="img6.jpg" alt="Saree" onclick="openImg(this.src)">
   </section>
+
+  <!-- FULLSCREEN VIEWER -->
+  <div id="viewer" onclick="closeImg()">
+    <img id="viewerImg">
+  </div>
 
   <!-- CONTACT -->
   <section class="contact">
-    <h2>Contact Us</h2>
+    <h2>Contact & Orders</h2>
     <p>📞 +91 83418 99469</p>
     <p>📸 Instagram: @littycollections</p>
   </section>
+
+  <!-- WHATSAPP BUTTON -->
+  <a href="https://wa.me/918341899469" class="whatsapp" target="_blank">
+    💬 Order on WhatsApp
+  </a>
 
   <!-- FOOTER -->
   <footer>
     © 2025 Litty Collections
   </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    function openImg(src){
+      document.getElementById("viewerImg").src = src;
+      document.getElementById("viewer").style.display = "flex";
+    }
+    function closeImg(){
+      document.getElementById("viewer").style.display = "none";
+    }
+  </script>
 
 </body>
 </html>
