@@ -1,204 +1,43 @@
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <h1>Litty Collections</h1>
-  <link rel="stylesheet" href="style.css" />
-  <meta name="description" content="Litty Collections — Traditional sarees, handpicked Kanjivaram, Banarasi, Silk sarees." />
+  <meta charset="UTF-8">
+  <title>Litty Collections</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Premium font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Top nav / header -->
-  <header class="site-header">
-    <img src="logo.png" alt="Litty Collections Logo" class="site-logo">
-      <!-- Logo (SVG) -->
-      <a class="logo" href="#">
-        <!-- Simple elegant SVG logo -->
-        <svg width="180" height="48" viewBox="0 0 420 110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <rect width="420" height="110" fill="none"/>
-          <text x="10" y="70" font-family="Georgia, 'Times New Roman', serif" font-size="54" fill="#D4AF37">Litty</text>
-          <text x="200" y="70" font-family="Poppins, sans-serif" font-size="30" fill="#FFFFFF">Collections</text>
-        </svg>
-      </a>
 
-      <nav class="main-nav">
-        <a href="#about">About</a>
-        <a href="#sarees">Sarees</a>
-        <a href="#products">Products</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#contact">Contact</a>
-      </nav>
-
-      <div class="header-actions">
-        <button id="themeToggle" aria-label="Toggle dark mode">🌗</button>
-        <a class="cart-btn" href="#cart">Cart <span id="cartCount">0</span></a>
-      </div>
-    </div>
+  <!-- HEADER -->
+  <header class="header">
+    <img src="logo.png" alt="Litty Collections Logo" class="logo">
+    <h1>Litty Collections</h1>
   </header>
 
-  <!-- HERO: slider -->
-  <section id="hero" class="hero">
-    <div class="slider" id="slider" aria-roledescription="carousel">
-      <!-- Slides (replace the placeholder URLs with your photos) -->
-      <div class="slide active" style="background-image:url('https://via.placeholder.com/1400x700?text=Silk+Saree+1')">
-        <div class="slide-caption">
-          <h1>Traditional Silk Sarees</h1>
-          <p>Handpicked. Elegant. Timeless.</p>
-          <a class="btn" href="#products">Shop Now</a>
-        </div>
-      </div>
-
-      <div class="slide" style="background-image:url('https://via.placeholder.com/1400x700?text=Kanjivaram')">
-        <div class="slide-caption">
-          <h1>Kanjivaram Masterpieces</h1>
-          <p>We bring heritage to your wardrobe.</p>
-          <a class="btn" href="#products">Explore</a>
-        </div>
-      </div>
-
-      <div class="slide" style="background-image:url('https://via.placeholder.com/1400x700?text=Banarasi')">
-        <div class="slide-caption">
-          <h1>Banarasi Elegance</h1>
-          <p>Gorgeous zari and rich textures.</p>
-          <a class="btn" href="#products">View Collection</a>
-        </div>
-      </div>
-
-      <button class="slide-arrow prev" id="prevSlide" aria-label="Previous slide">‹</button>
-      <button class="slide-arrow next" id="nextSlide" aria-label="Next slide">›</button>
-
-      <div class="slider-dots" id="sliderDots" role="tablist"></div>
-    </div>
+  <!-- GALLERY -->
+  <section class="gallery">
+    <img src="img1.jpg" alt="Saree">
+    <img src="img2.jpg" alt="Saree">
+    <img src="img3.jpg" alt="Saree">
+    <img src="img4.jpg" alt="Saree">
+    <img src="img5.jpg" alt="Saree">
+    <img src="img6.jpg" alt="Saree">
   </section>
 
-  <!-- About -->
-  <section id="about" class="container about">
-    <div class="about-grid">
-      <div>
-        <h2>About Litty Collections</h2>
-        <p>At Litty Collections we celebrate traditional Indian textiles — silk, Kanjivaram, Banarasi and more. Each saree is chosen for its craft, story and elegance.</p>
-        <ul class="features">
-          <li>Authentic handloom pieces</li>
-          <li>Premium packaging with traditional motifs</li>
-          <li>Worldwide shipping & secure checkout</li>
-        </ul>
-      </div>
-      <img src="https://via.placeholder.com/520x380?text=About+Image" alt="Traditional saree" />
-    </div>
+  <!-- CONTACT -->
+  <section class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 +91 83418 99469</p>
+    <p>📸 Instagram: @littycollections</p>
   </section>
 
-  <!-- Saree highlights -->
-  <section id="sarees" class="section-alt">
-    <div class="container">
-      <h2 class="section-title">Saree Designs</h2>
-      <div class="cards-grid">
-        <article class="card">
-          <img src="https://via.placeholder.com/400x520?text=Silk+Saree" alt="Silk saree">
-          <h3>Pure Silk Saree</h3>
-          <p class="muted">Soft drape & subtle sheen</p>
-        </article>
-        <article class="card">
-          <img src="https://via.placeholder.com/400x520?text=Kanjivaram" alt="Kanjivaram">
-          <h3>Kanjivaram</h3>
-          <p class="muted">Bold motifs & golden borders</p>
-        </article>
-        <article class="card">
-          <img src="https://via.placeholder.com/400x520?text=Banarasi" alt="Banarasi">
-          <h3>Banarasi</h3>
-          <p class="muted">Intricate zari work</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <!-- Products / Shop (no backend) -->
-  <section id="products" class="container products">
-    <h2 class="section-title">Products</h2>
-    <p class="muted">Click "Add to cart" to save items (stored locally in your browser).</p>
-
-    <div id="productList" class="product-grid">
-      <!-- JS will populate products here -->
-    </div>
-  </section>
-
-  <!-- Cart drawer (simple) -->
-  <aside id="cart" class="cart-drawer" aria-hidden="true">
-    <div class="cart-head">
-      <h3>Your Cart</h3>
-      <button id="closeCart" aria-label="Close cart">✕</button>
-    </div>
-    <div id="cartItems" class="cart-items"></div>
-    <div class="cart-foot">
-      <div class="cart-total">Total: ₹<span id="cartTotal">0</span></div>
-      <button id="checkoutBtn" class="btn">Checkout</button>
-    </div>
-  </aside>
-
-  <!-- Gallery (Instagram-style) -->
-  <section id="gallery" class="section-alt">
-    <div class="container">
-      <h2 class="section-title">Gallery</h2>
-      <p class="muted">Follow us on Instagram <strong>@littycollections</strong></p>
-      <div class="insta-grid" id="instaGrid">
-        <!-- Replace placeholders with actual gallery images -->
-        <img src="https://via.placeholder.com/400x400?text=Gallery+1" alt="">
-        <img src="https://via.placeholder.com/400x400?text=Gallery+2" alt="">
-        <img src="https://via.placeholder.com/400x400?text=Gallery+3" alt="">
-        <img src="https://via.placeholder.com/400x400?text=Gallery+4" alt="">
-        <img src="https://via.placeholder.com/400x400?text=Gallery+5" alt="">
-        <img src="https://via.placeholder.com/400x400?text=Gallery+6" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="container contact">
-    <h2 class="section-title">Contact Us</h2>
-    <div class="contact-grid">
-      <div>
-        <p>Phone: <a href="tel:+918341899469">+91 83418 99469</a></p>
-        <p>Instagram: <a href="https://instagram.com/littycollections" target="_blank" rel="noopener">@littycollections</a></p>
-        <p>Address: Your city, India</p>
-      </div>
-
-      <!-- Contact form: uses mailto fallback. For production, connect to Formspree (instructions below) -->
-      <form id="contactForm" action="mailto:your-email@example.com" method="post" encType="text/plain">
-        <label>
-          Name
-          <input type="text" name="name" required>
-        </label>
-        <label>
-          Email
-          <input type="email" name="email" required>
-        </label>
-        <label>
-          Phone
-          <input type="tel" name="phone">
-        </label>
-        <label>
-          Message
-          <textarea name="message" rows="4" required></textarea>
-        </label>
-        <div class="form-row">
-          <button type="submit" class="btn">Send Message</button>
-          <button type="button" id="contactFormAlternate" class="btn alt">Use Web Form</button>
-        </div>
-      </form>
-
-      <p class="form-note">Tip: For reliable form delivery, set up a free Formspree endpoint (instructions in README below).</p>
-    </div>
-  </section>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>© <span id="year"></span> Litty Collections — All rights reserved.</p>
-    </div>
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Litty Collections
   </footer>
 
-  <script src="script.js"></script>
 </body>
-
 </html>
-
-
