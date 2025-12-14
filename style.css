@@ -128,3 +128,8 @@ h1{
   text-shadow: 3px 3px 6px #000;
   margin: 10px 0;
 }
+.site-logo{
+  height: 60px;   /* change this number if needed */
+  width: auto;
+  object-fit: contain;
+}
